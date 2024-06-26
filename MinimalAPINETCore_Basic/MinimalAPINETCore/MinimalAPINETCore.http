@@ -1,0 +1,31 @@
+﻿@MinimalAPINETCore_HostAddress = https://localhost:7123
+
+POST {{MinimalAPINETCore_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name":"walk dog",
+  "isComplete":true
+}
+###
+
+GET {{MinimalAPINETCore_HostAddress}}/todoitems/1
+
+###
+
+GET {{MinimalAPINETCore_HostAddress}}/todoitems/{id}
+
+###
+
+GET {{MinimalAPINETCore_HostAddress}}/todoitems
+
+###
+
+PUT {{MinimalAPINETCore_HostAddress}}/todoitems/{id}
+Content-Type: application/json
+
+{
+  "name": "feed fish",
+  "isComplete": false
+}
+###
